@@ -1,0 +1,200 @@
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.top-tags {
+    bottom: auto;
+    top: 35px;
+}
+
+.tags {
+    color: #576cac;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+}
+
+.bottom-tag-html {
+    margin-left: -20px;
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.about-page,
+.contact-page,
+.skills-page,
+.mywork-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #576cac;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+            &::after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                margin-left: 20px;
+                opacity: 0.6;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 525;
+            min-width: fit-content;
+            text-align: justify;
+            opacity: 0; 
+            animation: pulse 1s forwards; 
+            display: block;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 1.2s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.text-window {
+    width: 20%; /* Adjust width if needed */
+    height: 150px; /* Adjust the height to make the boxes taller */
+    padding: 20px;
+    margin: 50px 0; /* Increase margin to add more space between boxes */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.5), 0 0 30px 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+    animation: fadeInUp 1s forwards;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    font-size: 13px;
+    position: relative; /* To ensure the right positioning works */
+    right: -1200px; /* Move the boxes to the right */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+
+    &:hover {
+        transform: scale(3); /* Slightly expand the box on hover */
+    }
+
+    .lid {
+        background-color: #576cac;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px 10px 0 0;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #455a8c;
+        }
+    }
+
+    .content {
+        display: none;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 0 0 10px 10px;
+    }
+
+    &.open .content {
+        display: block;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

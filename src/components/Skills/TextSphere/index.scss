@@ -1,0 +1,25 @@
+.text-sphere {
+    position: fixed; 
+    right: 200px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+.tagcloud {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px;
+}
+
+.tagcloud--item {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #576cac;
+}
+
+

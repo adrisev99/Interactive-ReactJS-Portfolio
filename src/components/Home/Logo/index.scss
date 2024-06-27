@@ -1,0 +1,35 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 609px; /* Added 'px' to height */
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    opacity: 1; /* Set to 1 to ensure visibility */
+
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Optional: Styles for additional elements if needed */
+.svg-container {
+    stroke: #f5831f;
+    stroke-width: 10;
+}
+.solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+    transform: rotateZ(30deg);
+    z-index: 1;
+}
