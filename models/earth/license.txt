@@ -1,0 +1,11 @@
+Model Information:
+* title:	IMPACT — Low Poly Earth (baked)
+* source:	https://sketchfab.com/3d-models/impact-low-poly-earth-baked-4c871e3db9dc459aa8cf1bafcb5fdf8e
+* author:	Ambroise (https://sketchfab.com/ambroize)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "IMPACT — Low Poly Earth (baked)" (https://sketchfab.com/3d-models/impact-low-poly-earth-baked-4c871e3db9dc459aa8cf1bafcb5fdf8e) by Ambroise (https://sketchfab.com/ambroize) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
