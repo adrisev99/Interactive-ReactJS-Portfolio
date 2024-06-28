@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Interactive-ReactJS-Portfolio/static/css/main.9e5a0ea4.css",
+    "main.css": "/Interactive-ReactJS-Portfolio/static/css/main.02234b4b.css",
     "main.js": "/Interactive-ReactJS-Portfolio/static/js/main.9f1287e8.js",
     "static/js/453.b3faef14.chunk.js": "/Interactive-ReactJS-Portfolio/static/js/453.b3faef14.chunk.js",
     "static/media/logo-a.png": "/Interactive-ReactJS-Portfolio/static/media/logo-a.7c07c14625071eaafa2f.png",
@@ -9,12 +9,12 @@
     "static/media/LaBelleAurore.woff2": "/Interactive-ReactJS-Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/Interactive-ReactJS-Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/Interactive-ReactJS-Portfolio/index.html",
-    "main.9e5a0ea4.css.map": "/Interactive-ReactJS-Portfolio/static/css/main.9e5a0ea4.css.map",
+    "main.02234b4b.css.map": "/Interactive-ReactJS-Portfolio/static/css/main.02234b4b.css.map",
     "main.9f1287e8.js.map": "/Interactive-ReactJS-Portfolio/static/js/main.9f1287e8.js.map",
     "453.b3faef14.chunk.js.map": "/Interactive-ReactJS-Portfolio/static/js/453.b3faef14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e5a0ea4.css",
+    "static/css/main.02234b4b.css",
     "static/js/main.9f1287e8.js"
   ]
 }
