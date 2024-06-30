@@ -10,11 +10,8 @@ https://adrisev99.github.io/Interactive-ReactJS-Portfolio/
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Deployment](#deployment)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Prerequisites
@@ -59,9 +56,6 @@ Your app should now be running on `localhost:3000`.
 - **Babel**: A JavaScript compiler for using the latest features.
 - **ESLint**: A static code analysis tool for identifying problematic patterns.
 
-## Project Structure
-
-
 ## Deployment
 
 This project can be easily deployed on platforms like GitHub Pages, Vercel, or Netlify. Follow the specific instructions for your chosen platform to deploy the project.
@@ -94,7 +88,7 @@ This project can be easily deployed on platforms like GitHub Pages, Vercel, or N
 If you have any questions or suggestions, feel free to reach out to me:
 
 - **Email**: aseveri3@jh.edu
-- **LinkedIn**: [linkedin.com/in/adrian-severino](www.linkedin.com/in/adrian-severino)
+- **LinkedIn**: [linkedin.com/in/adrian-severino](https://linkedin.com/in/adrian-severino)
 - **GitHub**: [github.com/adrisev99](https://github.com/adrisev99)
 
 Thank you for visiting my portfolio! I hope you find my work impressive and insightful.
