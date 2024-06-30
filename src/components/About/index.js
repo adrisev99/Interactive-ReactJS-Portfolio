@@ -16,13 +16,13 @@ const About = () => {
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-            setLetterClass('text-animate-hover');
-        }, 3000);
+            setLetterClass('text-animate-hover')
+        }, 3000)
 
         return () => {
             clearTimeout(timeoutId);
-        };
-    }, []);
+          };
+    }, [])
 
     useEffect(() => {
         
@@ -50,10 +50,10 @@ const About = () => {
 
         
         const loader = new GLTFLoader();
-        loader.load('/models/earth/scene.gltf', (gltf) => {
+        loader.load(`${process.env.PUBLIC_URL}/models/earth/scene.gltf`, (gltf) => {
             const model = gltf.scene;
-            model.scale.set(15, 15, 15);
-            model.position.set(0, 0, 0);
+            model.scale.set(13, 13, 13);
+            model.position.set(3, 0, 0);
             scene.add(model);
             modelRef.current = model;
         }, undefined, (error) => {

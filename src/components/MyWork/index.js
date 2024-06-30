@@ -3,7 +3,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faDocker, faJsSquare, faLinux, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faLinux, faPython, faRProject, faReact, faSwift } from '@fortawesome/free-brands-svg-icons';
 import Popup from '../Popup';
 
 const MyWork = () => {
@@ -14,19 +14,19 @@ const MyWork = () => {
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-            setLetterClass('text-animate-hover');
-        }, 3000);
+            setLetterClass('text-animate-hover')
+        }, 3000)
 
         return () => {
             clearTimeout(timeoutId);
-        };
-    }, []);
+          };
+    }, [])
 
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (descriptionRef.current && !descriptionRef.current.contains(event.target)) {
                 setAnimationClass('bounce-out');
-                setTimeout(() => setActiveFace(null), 600); // Wait for the animation to finish
+                setTimeout(() => setActiveFace(null), 600);
             }
         };
 
@@ -37,13 +37,13 @@ const MyWork = () => {
     }, []);
 
     const handleClick = (face, event) => {
-        event.stopPropagation(); // Stop the event from propagating to the document
+        event.stopPropagation();
         if (face !== activeFace) {
             setAnimationClass('bounce-out');
             setTimeout(() => {
                 setActiveFace(face);
                 setAnimationClass('bounce-in');
-            }, 600); // Wait for the bounce-out animation to complete
+            }, 600); 
         } else {
             setActiveFace(face);
             setAnimationClass('bounce-in');
@@ -51,12 +51,12 @@ const MyWork = () => {
     };
 
     const descriptions = {
-        face1: "Description for Angular",
-        face2: "Description for Python",
-        face3: "Description for Linux",
-        face4: "Description for React",
-        face5: "Description for JavaScript",
-        face6: "Description for Docker"
+        face1: { title: "Swift", description: "I am currently developing a new iOS app called ClosetAI, which leverages artificial intelligence to help users organize and select outfits from their wardrobe. Built using Swift, this app aims to provide personalized fashion recommendations and outfit planning features. While ClosetAI is still under construction, more details and updates will be available soon. Stay tuned!" },
+        face2: { title: "Python", description: "I have extensive experience in Python, applying it to a wide range of projects. At Ten-Nine Technologies, I utilized TensorFlow and PyTorch for machine learning models to predict material behaviors. My work includes developing an astrophysical machine learning CNN in TensorFlow and creating a SnakeAI game with deep Q-learning. These projects highlight my ability to leverage Python for complex problem-solving and innovative applications. Check out my <a href='https://github.com/adrisev99' target='_blank' rel='noopener noreferrer'>GitHub</a> to see them in action!" },
+        face3: { title: "Linux", description: "I have extensive experience working with Linux, particularly in server implementation and management. At Johns Hopkins University, I use CentOS 7 daily for various research and development tasks. Additionally, I've set up and maintained game servers, including Minecraft, on Raspberry Pi using Raspbian Linux. My work highlights my proficiency in configuring, optimizing, and managing Linux-based servers for both research and gaming environments." },
+        face4: { title: "React", description: "This portfolio website demonstrates my proficiency in modern web development technologies. Built with React for component-based architecture, CSS for advanced styling, JavaScript for dynamic functionality, and Three.js for rendering interactive 3D graphics, it showcases my ability to create responsive and visually engaging web applications. The project emphasizes my skills in integrating complex libraries and frameworks to deliver an exceptional user experience." },
+        face5: { title: "R", description: "At Johns Hopkins University, I have extensively used R for statistical and probability modeling and analysis. My work includes applying R for Monte Carlo simulations and various statistical coursework, providing deep insights and accurate predictions for multivariable datasets. I have been cultivating my skills in R since my first semester as an undergraduate, consistently leveraging it for complex data analysis and modeling tasks." },
+        face6: { title: "GitHub", description: "My GitHub showcases a diverse collection of projects highlighting my expertise in various programming languages and technologies. From machine learning models in Python and TensorFlow to web development with React and Three.js, and server implementations on Linux, my repositories reflect a broad range of skills and interests. Visit my <a href='https://github.com/adrisev99' target='_blank' rel='noopener noreferrer'>GitHub</a> to explore my work and see these projects in action." }
     };
 
     return (
@@ -71,14 +71,14 @@ const MyWork = () => {
                         />
                     </h1>
                     <p className={letterClass}>
-                        Click on the cube faces to learn more!
+                        Click on the cube's faces to learn about my work!
                     </p>
                 </div>
                 <div className="interactive-area">
                     <div className='stage-cube-cont'>
                         <div className='cubespinner'>
                             <div className='face1' onClick={(event) => handleClick('face1', event)}>
-                                <FontAwesomeIcon icon={faAngular} />
+                                <FontAwesomeIcon icon={faSwift} />
                             </div>
                             <div className='face2' onClick={(event) => handleClick('face2', event)}>
                                 <FontAwesomeIcon icon={faPython} />
@@ -90,17 +90,17 @@ const MyWork = () => {
                                 <FontAwesomeIcon icon={faReact} />
                             </div>
                             <div className='face5' onClick={(event) => handleClick('face5', event)}>
-                                <FontAwesomeIcon icon={faJsSquare} />
+                                <FontAwesomeIcon icon={faRProject} />
                             </div>
                             <div className='face6' onClick={(event) => handleClick('face6', event)}>
-                                <FontAwesomeIcon icon={faDocker} />
+                                <FontAwesomeIcon icon={faGithubSquare} />
                             </div>
                         </div>
                     </div>
                     {activeFace && (
                         <div className={`description-window ${animationClass}`} ref={descriptionRef}>
-                            <h2>{descriptions[activeFace]}</h2>
-                            <p>{descriptions[activeFace]}</p>
+                            <h2>{descriptions[activeFace].title}</h2>
+                            <p dangerouslySetInnerHTML={{ __html: descriptions[activeFace].description }}></p>
                         </div>
                     )}
                 </div>
@@ -112,9 +112,4 @@ const MyWork = () => {
 };
 
 export default MyWork;
-
-
-
-
-
 

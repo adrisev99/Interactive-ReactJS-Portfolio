@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
-    cursor: pointer; /* Add cursor pointer for interactivity */
+    cursor: pointer;
   }
 
   .face1 {
@@ -126,17 +126,18 @@
   height: 60%;
   margin-left: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(183, 183, 183, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5), 0 0 30px 10px rgba(255, 255, 255, 0.5), 0 0 40px 15px rgba(255, 255, 255, 0.5); /* Glow effect */
   position: absolute;
   right: 100px;
   top: 20%;
-  z-index: 10; /* Ensure the description box is on top */
+  z-index: 10; 
   animation-duration: 0.6s;
   animation-fill-mode: both;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: medium;
 }
 
 .bounce-in {

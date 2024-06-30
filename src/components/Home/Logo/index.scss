@@ -1,14 +1,14 @@
 .logo-container {
     z-index: 0;
     width: 400px;
-    height: 609px; /* Added 'px' to height */
+    height: 609px; 
     position: absolute;
     top: 0;
     right: 15%;
     bottom: 0;
     left: auto;
     margin: auto;
-    opacity: 1; /* Set to 1 to ensure visibility */
+    opacity: 1; 
 
     canvas {
         width: 100%;
@@ -16,7 +16,7 @@
     }
 }
 
-/* Optional: Styles for additional elements if needed */
+
 .svg-container {
     stroke: #f5831f;
     stroke-width: 10;

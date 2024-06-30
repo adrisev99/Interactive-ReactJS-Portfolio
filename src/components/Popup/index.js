@@ -7,7 +7,7 @@ const Popup = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setVisible(false);
-        }, 5000); // Hide after 5 seconds
+        }, 5000);
 
         return () => clearTimeout(timer);
     }, []);

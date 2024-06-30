@@ -52,7 +52,7 @@ const Contact = () => {
 
                 </h1>
                 <p>
-                    contact me please
+                    If you are interested in discussing potential collaborations, projects, or learning more about my qualifications and experience, please feel free to get in touch. I am open to new opportunities and professional connections. Fill out the form below to connect.
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>

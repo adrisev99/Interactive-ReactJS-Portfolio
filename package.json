@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://adrisev99.github.io/Interactive-ReactJS-Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
@@ -14,6 +15,8 @@
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
     "animate.css": "^4.1.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.12",
     "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "react": "^18.3.1",
@@ -26,17 +29,17 @@
     "react-tsparticles": "^2.12.2",
     "sass": "^1.77.6",
     "TagCloud": "^2.5.0",
+    "tailwind-merge": "^2.3.0",
     "three": "^0.165.0",
     "tsparticles": "^3.4.0",
-    "homepage": "https://adrisev99.github.io/Interactive-ReactJS-Portfolio",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/adrisev99/Interactive-ReactJS-Portfolio.git",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

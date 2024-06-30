@@ -47,13 +47,13 @@
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 25%;
+        width: 27%;
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
 
         h1 {
-            font-size: 53px;
+            font-size: 52px;
             font-family: 'Coolvetica';
             color: #576cac;
             font-weight: 400;
@@ -119,10 +119,10 @@
 }
 
 .text-window {
-    width: 20%; /* Adjust width if needed */
-    height: 150px; /* Adjust the height to make the boxes taller */
+    width: 20%;
+    height: 130px;
     padding: 20px;
-    margin: 50px 0; /* Increase margin to add more space between boxes */
+    margin: 60px 0;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.5), 0 0 30px 15px rgba(255, 255, 255, 0.5); /* Glow effect */
@@ -131,12 +131,12 @@
     font-weight: 600;
     text-align: justify;
     font-size: 13px;
-    position: relative; /* To ensure the right positioning works */
-    right: -1200px; /* Move the boxes to the right */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+    position: relative;
+    right: -1100px;
+    transition: transform 0.3s ease-in-out;
 
     &:hover {
-        transform: scale(3); /* Slightly expand the box on hover */
+        transform: scale(3);
     }
 
     .lid {

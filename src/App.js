@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import './App.scss';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import {loadFull} from "tsparticles";
-import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
+import { loadFull } from "tsparticles";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './components/Home';
 import particlesOptions from "./particles.json";
 import About from "./components/About";
-import Skills from "./components/Skills"
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import MyWork from "./components/MyWork";
 
@@ -38,9 +38,9 @@ function App() {
   }, [init]);
 
   return (
-    <>
-      <div className="App">
-      {init && <Particles options={particlesOptions}/>}
+    <div className="App">
+      {init && <Particles options={particlesOptions} />}
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -50,10 +50,9 @@ function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
-      </div>
-    </>
+      </Router>
+    </div>
   );
 }
 
 export default App;
-
