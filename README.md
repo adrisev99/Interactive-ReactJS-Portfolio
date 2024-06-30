@@ -12,6 +12,7 @@ https://adrisev99.github.io/Interactive-ReactJS-Portfolio/
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
 - [Usage](#usage)
+- [Credits](#credits)
 - [Contact](#contact)
 
 ## Prerequisites
@@ -82,6 +83,11 @@ This project can be easily deployed on platforms like GitHub Pages, Vercel, or N
 
 1. **Navigate through the website**: Explore various sections including About, Skills, My Work, and Contact.
 2. **Interact with elements**: Click on interactive elements to learn more about the projects and skills showcased.
+
+## Credits
+
+"IMPACT — Low Poly Earth (baked)" (https://skfb.ly/oMMRu) by Amb is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 
 ## Contact
 
